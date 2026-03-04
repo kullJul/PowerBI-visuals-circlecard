@@ -1,5 +1,10 @@
 {
-  "name": "visual",
+  "name": "circle-card",
+  "version": "1.0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+  },
   "dependencies": {
     "d3": "5.11.0",
     "powerbi-visuals-utils-dataviewutils": "2.2.1",
@@ -16,12 +21,11 @@
     "tslint": "5.18.0"
   },
   "scripts": {
-    "postinstall": "npm run cert",
     "pbiviz": "pbiviz",
     "start": "pbiviz start",
     "package": "pbiviz package",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "test": "pbiviz package --resources --no-minify --no-pbiviz",
-    "cert": "pbiviz --install-cert"
+    "cert": "pbiviz install-cert"
   }
 }
